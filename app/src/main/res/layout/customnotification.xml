@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/notification_center_color">
+
+    <!-- Row 1 -->
+
+    <LinearLayout
+        android:id="@+id/firstRow"
+        style="@style/Notification_Center_LinearLayout_Style"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/tile1"
+            style="@style/Notification_Center_RelativeLayout_Style">
+
+            <ImageView
+                android:id="@+id/image1"
+                style="@style/Notification_Center_ImageView_Style"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/wifi_enabled" />
+
+            <TextView
+                android:id="@+id/titleFirst"
+                style="@style/Notification_Center_TextView_Style"
+                android:layout_below="@id/image1"
+                android:text="@string/wifi" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tile2"
+            style="@style/Notification_Center_RelativeLayout_Style">
+
+            <ImageView
+                android:id="@+id/image2"
+                style="@style/Notification_Center_ImageView_Style"
+                android:src="@drawable/bluetooth_enabled" />
+
+            <TextView
+                android:id="@+id/titleNameFirstFirst"
+                style="@style/Notification_Center_TextView_Style"
+                android:layout_below="@id/image2"
+                android:text="@string/bluetooth" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tile3"
+            style="@style/Notification_Center_RelativeLayout_Style">
+
+            <ImageView
+                android:id="@+id/image3"
+                style="@style/Notification_Center_ImageView_Style"
+                android:src="@drawable/screen_rotation_enabled" />
+
+            <TextView
+                android:id="@+id/tileName3"
+                style="@style/Notification_Center_TextView_Style"
+                android:layout_below="@id/image3"
+                android:text="@string/rotation" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Row 2 -->
+
+    <LinearLayout
+        android:id="@+id/thirdRow"
+        style="@style/Notification_Center_LinearLayout_Style"
+        android:layout_below="@id/firstRow">
+
+        <RelativeLayout
+            android:id="@+id/tile4"
+            style="@style/Notification_Center_RelativeLayout_Style">
+
+            <ImageView
+                android:id="@+id/image4"
+                style="@style/Notification_Center_ImageView_Style"
+                android:src="@drawable/location_enabled" />
+
+            <TextView
+                android:id="@+id/tileName4"
+                style="@style/Notification_Center_TextView_Style"
+                android:layout_below="@id/image4"
+                android:text="@string/location" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tile5"
+            style="@style/Notification_Center_RelativeLayout_Style">
+
+            <ImageView
+                android:id="@+id/image5"
+                style="@style/Notification_Center_ImageView_Style"
+                android:src="@drawable/flashlight_enabled" />
+
+            <TextView
+                android:id="@+id/tileName5"
+                style="@style/Notification_Center_TextView_Style"
+                android:layout_below="@id/image5"
+                android:text="@string/flashlight" />
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/Notification_Center_RelativeLayout_Style">
+
+            <ImageView
+                android:id="@+id/image6"
+                style="@style/Notification_Center_ImageView_Style"
+                android:src="@drawable/airplane_mode_enabled" />
+
+            <TextView
+                android:id="@+id/tileName6"
+                style="@style/Notification_Center_TextView_Style"
+                android:layout_below="@id/image6"
+                android:text="@string/airplane_mode" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnShownotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/show_notifications" />
+
+</RelativeLayout>

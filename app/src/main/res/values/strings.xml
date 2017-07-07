@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NotificationCenterDemo</string>
+    <string name="wifi">WiFi</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="rotation">Rotation</string>
+    <string name="location">Location</string>
+    <string name="flashlight">Flashlight</string>
+    <string name="airplane_mode">Airplane mode</string>
+    <string name="show_notifications">Show Notifications</string>
+    <string name="no_notifications">No notifications.</string>
+    <string name="search_app">Search notification by app name</string>
+</resources>
